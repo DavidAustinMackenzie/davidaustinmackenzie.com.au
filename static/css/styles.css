@@ -313,7 +313,7 @@ p {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #3399ff;
+  color: #ffffff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -342,7 +342,7 @@ p {
   right: 0;
   left: 0;
   bottom: 0;
-  background: #76b5c5;
+  background: #3399ff;
   transition: 0.3s;
   z-index: 999;
 }
