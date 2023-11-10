@@ -1,0 +1,114 @@
+  {% extends "base.html" %}
+  {% block header %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo me-auto me-lg-0"><a href="{{ url_for('index') }}">David Mackenzie</a></h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('resume') }}">Resume</a></li>
+            <li><a class="active" href="{{ url_for('portfolio') }}">Portfolio</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="http://www.linkedin.com/in/david-mackenzie-9863b7ba" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+  {% endblock %}
+  {% block content %}
+  <main id="main">
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Here are some sample projects that I have created. The first project was a freelance job for a client to setup a Microsoft Access DB with VBA Frontend. There are other sample web projects that I have created for Uni units.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-desktop">Desktop</li>
+              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-mobile">Mobile</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-desktop">
+            <div class="portfolio-wrap">
+              <img src="{{url_for('static',filename='img/portfolio1/vba_mainmenu.jpg')}}" class="img-fluid" alt="Access DB VBA Mainmenu">
+              <div class="portfolio-info">
+                <h4>Warranty Ticket Management System</h4>
+                <p>Desktop</p>
+                <div class="portfolio-links">
+                  <a href="{{url_for('static',filename='img/portfolio1/vba_mainmenu.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Desktop 1"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('portfolio_details1') }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{{url_for('static',filename='img/portfolio2/ldap_users.jpg')}}" class="img-fluid" alt="LDAP Web App Users">
+              <div class="portfolio-info">
+                <h4>LDAP Flask App</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="{{url_for('static',filename='img/portfolio2/ldap_users.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('portfolio_details2') }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{{url_for('static',filename='img/portfolio3/emailsecurity_dashboard.jpg')}}" class="img-fluid" alt="Email Security Web App Dashboard">
+              <div class="portfolio-info">
+                <h4>Email Security Web App</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="{{url_for('static',filename='img/portfolio3/emailsecurity_dashboard.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('portfolio_details3') }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
+            <div class="portfolio-wrap">
+              <img src="{{url_for('static',filename='img/portfolio4/lotto_saved_games.jpg')}}" class="img-fluid" alt="Android Mobile App Lotto Game Generator">
+              <div class="portfolio-info">
+                <h4>Lotto Generator Mobile App</h4>
+                <p>Mobile</p>
+                <div class="portfolio-links">
+                  <a href="{{url_for('static',filename='img/portfolio4/lotto_saved_games.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mobile 1"><i class="bx bx-plus"></i></a>
+                  <a href="{{ url_for('portfolio_details4') }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}

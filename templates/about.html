@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block header %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo me-auto me-lg-0"><a href="{{ url_for('index') }}">David Mackenzie</a></h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a class="active" href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('resume') }}">Resume</a></li>
+          <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="http://www.linkedin.com/in/david-mackenzie-9863b7ba" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  {% endblock %}
+  {% block content %}
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I am Software Engineer that has completed my Bachelor of Computer Science majoring in Software Development and Cybersecurity. I have worked in a variety of different roles and am looking to work for a company and further developer the solid foundation I have gained in the Software Industry through my studies and job placement, casual work.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="{{url_for('static',filename='img/me.jfif')}}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Software Engineer</h3>
+            <p class="fst-italic">
+              I am passionate about learning new skills and improving skills that I already have. I have demonstrated these skills throughout my studies and career. 
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Phone:</strong> 0438981832</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>City:</strong> Melbourne, Victoria</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Degree:</strong> Bachelor of Computer Science</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> david.austin.mackenzie@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              During the professionl placement and casual employment for ANCA Motion, I developed and improved my software engineering skills. 
+              Throught my time in the workplace, I improved my communiation, time management and estimation skills. This helped me to fix issues faster and plan accordingly how long it was going to take to carry out tasks. I created a stable software application that was a remake of an old application created using C++ and WinForms. The application that I create in C# and WPF was a released version that is included in the Cylindrical Grinding software bundle provided to customers. This had never been achieved by a professional placement student on the Software Apps team before.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>These are the various skills that I have learnt throught my studies and professional career.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C# <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Java <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Ruby <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+  </main><!-- End #main -->
+  {% endblock %}

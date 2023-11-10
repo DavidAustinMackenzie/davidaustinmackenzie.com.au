@@ -1,0 +1,120 @@
+  {% extends "base.html" %}
+  {% block header %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo me-auto me-lg-0"><a href="{{ url_for('index') }}">David Mackenzie</a></h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a class="active" href="{{ url_for('resume') }}">Resume</a></li>
+          <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="http://www.linkedin.com/in/david-mackenzie-9863b7ba" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+  {% endblock %}
+  {% block content %}
+  <main id="main">
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>I have worked in a wide range of roles, through the experience I have gained has helped me to learn and develop in a role.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>David Mackenzie</h4>
+              <p><em>Innovative and deadline-driven software engineer with 1.5+ years of experience investigating, designing, developing and testing software solutions.</em></p>
+              <p>
+              <ul>
+                <li>4/87 Westbury Street, St Kilda East</li>
+                <li>0438981832</li>
+                <li>david.austin.mackenzie@gmail.com</li>
+              </ul>
+              </p>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Computer Science (Profesional degree)</h4>
+              <h5>2020 - 2023</h5>
+              <p><em>Swinburne University of Technology, Hawthorn Campus</em></p>
+              <p>I studied hard to achieve the best outcome in a double major of Software Development and Cybersecurity.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Diploma in Software Development</h4>
+              <h5>2017</h5>
+              <p><em>Holmeglen Institute of TAFE, Chadstone Campus</em></p>
+              <p>I worked hard to get the best results in this degree and to ensure that I had a solid foundation in Software Development. I achieved such good results that I was recommended for a help desk position and worked in that role for 18months to gain experience in IT.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Certificate IV in Progamming</h4>
+              <h5>2017</h5>
+              <p><em>Holmeglen Institute of TAFE, Chadstone Campus</em></p>
+              <p>I was passionate about creating software solutions, so I wanted to study full time to further develop these skills that could be used in a professional environment.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Software Engineer on Software Application Team</h4>
+              <h5>January 2023 - September 2023</h5>
+              <p><em>ANCA Motion, 1 Bessemer Rd, Bayswater North</em></p>
+              <p>
+              <ul>
+                <li>Continue to fix bugs, implement new features for 3 major versions of Cylindrical Grinding Software applcation</li>
+                <li>Creating documentation for new featurers implemented </li>
+                <li>Adding functionality to Cylindrical Grinding software in a separate branch for inclined grinding machine, merging changes back to main branch after completion</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Professional placement at ANCA Motion</h4>
+              <h5>January 2022 - Janurary 2023</h5>
+              <p><em>ANCA Motion, 1 Bessemer Rd, Bayswater North</em></p>
+              <p>
+              <ul>
+                <li>Scrum methodology used with 3 week sprints to plan project tasks</li>
+                <li>Designed, created, built, documented and tested released version of diagnostic program created using C# and WPF (9 months of development)</li>
+                <li>3 Months implemented features and provided support for 2 major versions of custom Cylindrical Grinding Software application. </li>
+                <li>Provided training for released software diagnostic tool</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Traffic Controller at Construct Traffic</h4>
+              <h5>August 2021 - December 2021</h5>
+              <p><em>Construct Traffic</em></p>
+              <p>
+              <ul>
+                <li>Management and assisting directing of traffic around worksites</li>
+                <li>Effective communication between team members on site</li>             
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}

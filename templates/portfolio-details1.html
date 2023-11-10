@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+<main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio1/vba_adduser.jpg')}}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio1/vba_findticket.jpg')}}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio1/vba_login.jpg')}}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio1/vba_mainmenu.jpg')}}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio1/vba_viewtickets.jpg')}}" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Desktop Application</li>
+                <li><strong>Client</strong>: MB Melbourne</li>
+                <li><strong>Project date</strong>: 05 February, 2018</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/DavidAustinMackenzie/warranty-management-template" target="_blank">Github Link</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>This is an Access DB with a VBA Frontend</h2>
+              <p>
+                This is a sample project that I created for a client in 2018. It was implemented to update the system that was currently used to manage warranty job tickets using an Excel spreadsheet. This allowed users to be created and to view and update job tickets with the current status. Data could be exported to Excel to be sent if the tickets were old and need to be actioned by an employee.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}
+  

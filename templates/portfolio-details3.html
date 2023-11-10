@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+<main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio3/emailsecurity_dashboard.jpg')}}" alt="Email Security Web App Dashboard">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio3/emailsecurity_emails.jpg')}}" alt="Email Security Web App Emails Page">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio3/emailsecurity_login.jpg')}}" alt="Email Security Web App Login Page">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio3/emailsecurity_logs.jpg')}}" alt="Email Security Web App Logs Page">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio3/email_displayemail.jpg')}}" alt="Email Security Web App Original Email">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web Application</li>
+                <li><strong>Client</strong>: Final Year Project</li>
+                <li><strong>Project date</strong>: 30 October 2023</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/CAPSTONE-GROUP35/gateway-setup" target="_blank">Github Link</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>This was the final year project group project web app. </h2>
+              <p>
+                The system filters out phishing/spam/malware emails and creates an archive of the email. The email is dropped if it is not safe and logs are created for emails that are sent to the server. This flask app is for admins to login and view the data of the system.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}
+  
