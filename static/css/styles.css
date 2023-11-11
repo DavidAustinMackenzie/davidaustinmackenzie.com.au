@@ -180,7 +180,7 @@ p {
 }
 
 .nav-link.active{
-  color:#000000;
+  color:red;
 }
 
 .navbar li a{
