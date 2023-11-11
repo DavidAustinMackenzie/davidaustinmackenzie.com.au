@@ -157,7 +157,7 @@ p {
 }
 
 .header-social-links a {
-  color: #FF0000;
+  color: #00008B;
   padding-left: 6px;
   display: inline-block;
   line-height: 0px;
@@ -166,7 +166,7 @@ p {
 }
 
 .header-social-links a:hover {
-  color: #00008B;
+  color: #C0C0C0;
 }
 
 /*--------------------------------------------------------------
