@@ -183,10 +183,6 @@ p {
   color:#C0C0C0;
 }
 
-.navbar li a .active{
-  color: red;
-}
-
 .navbar ul {
   margin: 0;
   padding: 0;
