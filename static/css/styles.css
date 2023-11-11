@@ -627,7 +627,7 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .heading-padding {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .resume .resume-title {
@@ -671,7 +671,7 @@ section {
 }
 
 .resume .resume-item:last-child {
-  padding-bottom: 0;
+  padding-bottom: 40px;
 }
 
 .resume .resume-item::before {
