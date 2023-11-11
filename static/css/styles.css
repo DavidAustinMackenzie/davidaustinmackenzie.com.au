@@ -179,9 +179,12 @@ p {
   padding: 0;
 }
 
+.nav-link.active{
+  color:#000000;
+}
+
 .navbar li a{
   color:#C0C0C0;
-  border-color: #00008B;
 }
 
 .navbar ul {
@@ -243,7 +246,6 @@ p {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #222222;
-  border-color: #222222;
 }
 
 .navbar .dropdown ul {
