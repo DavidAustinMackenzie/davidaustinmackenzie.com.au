@@ -242,7 +242,7 @@ p {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #222222;
-  text-decoration-color: #222222;
+  border-color: #222222;
 }
 
 .navbar .dropdown ul {
