@@ -190,6 +190,7 @@ p {
 .navbar li {
   position: relative;
   padding: 10px 0 10px 28px;
+  color: #ffffff;
 }
 
 .navbar a,
