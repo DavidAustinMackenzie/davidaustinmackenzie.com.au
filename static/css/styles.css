@@ -250,7 +250,7 @@ p {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #00008B;
+  background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
