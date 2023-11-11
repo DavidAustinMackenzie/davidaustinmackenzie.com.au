@@ -627,7 +627,7 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .heading-padding {
-  padding-top: 25px;
+  padding: 25 0 0 0;
 }
 
 .resume .resume-title {
