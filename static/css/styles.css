@@ -434,14 +434,6 @@ body{
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/me.jfif") top;
-  background-size:auto;
-  background-repeat: no-repeat;
-}
-
 #hero .container {
   padding-top: 70px;
   position: relative;
@@ -656,6 +648,8 @@ section {
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
+  background: #effbf9;
+  display: inline-block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #1d685f;
@@ -664,9 +658,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #effbf9;
   padding: 5px 15px;
-  display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
   color: #34b7a7;
