@@ -442,7 +442,7 @@ body{
   position: relative;
 }
 
-@media (max-width: 600px) {
+@media (max-height: 1080px) {
   #hero .container {
     padding-top: 58px;
   }
