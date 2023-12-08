@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+<main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio5/badsanta_add_new.jpg')}}" alt="Add a new Bad Santa">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio5/badsanta_display_all.jpg')}}" alt="Display all Bad Santa records">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio5/badsanta_draw_all.jpg')}}" alt="Display all Draw records">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio5/badsanta_draw_full.jpg')}}" alt="Validation error for Draw full">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio5/badsanta_duplicate.jpg')}}" alt="Validation error for Duplicate name">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio5/badsanta_update_name.jpg')}}" alt="Update name for a Bad Santa record">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web App</li>
+                <li><strong>Client</strong>: Created Bad Santa Web app for client</li>
+                <li><strong>Project date</strong>: 05 December 2023</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/DavidAustinMackenzie/BadSantaFullStack" target="_blank">Github Link</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Full stack web app with Angular Frontend and Django Backend.</h2>
+              <p>
+                This was a web app that I created for a client that wanted to create unique randomly generated numbers for the Xmas Work Party Bad Santa Draw. I added some basic client side validation to check for duplicate names, the draw is not selected and also to ensure that unique random numbers are generated. This was a fun introduction to working with Angular and Django and I learnt lots about both frameworks. I deployed this app to 2 servers a Unix server for the BackEnd and a Linux server for the FrontEnd on AWS for the client to access.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}
+  

@@ -106,6 +106,11 @@ def portfolio_details4():
     return render_template('portfolio-details4.html')
 
 
+@app.route('/portfolio-details5')
+def portfolio_details5():
+    return render_template('portfolio-details5.html')
+
+
 @app.route('/portfolio')
 def portfolio():
     return render_template('portfolio.html')
