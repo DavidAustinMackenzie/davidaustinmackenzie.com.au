@@ -1,3 +1,7 @@
+Switch to 'user' account on Freebsd image
+
+su user
+
 #enable virtual environment
 
 source venv/bin/activate
