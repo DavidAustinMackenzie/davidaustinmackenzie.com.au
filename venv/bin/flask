@@ -1,4 +1,4 @@
-#!/usr/local/www/davidaustinmackenzie.com.au/venv/bin/python3.9
+#!/home/dave/Apps/davidaustinmackenzie.com.au/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
