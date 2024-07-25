@@ -10,6 +10,12 @@ source venv/bin/activate
 
 gunicorn --bind 0.0.0.0:8000 wsgi:app &
 
+The following commands need to be run as su
+
+#switch to root user
+
+su
+
 #Restart nginx service
 
 service nginx restart
