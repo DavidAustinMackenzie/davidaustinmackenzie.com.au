@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+<main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/add_booking.jpg')}}" alt="Add a new Booking for a Meeting room">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/add_meeting_room.jpg')}}" alt="Add a new Meeting room">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/add_user.jpg')}}" alt="Add a new User">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/display_bookings.jpg')}}" alt="Display all the bookings">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/display_meeting_rooms.jpg')}}" alt="Display all the meeting rooms">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/display_users.jpg')}}" alt="Display all the users">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/update_booking.jpg')}}" alt="Update a booking">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/update_meeting_room.jpg')}}" alt="Update a meeting room">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/update_user.jpg')}}" alt="Update a user">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/delete_booking.jpg')}}" alt="Delete a booking">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/delete_meeting_room.jpg')}}" alt="Delete a meeting room">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='img/portfolio6/delete_user.jpg')}}" alt="Delete a user">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web App</li>
+                <li><strong>Client</strong>: Currently developing a Web app for a client to manage meeting room bookings</li>
+                <li><strong>Project date</strong>: Currently in development</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/DavidAustinMackenzie/FFLMeetingRoomBookingApp" target="_blank">Github Link</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Full stack web app with ASP.NET MVC Core using Razor pages for displaying Front end.</h2>
+              <p>
+                This full stack web app is in development. It uses ASP.NET MVC core for the application that is connected to a SQL Server to store the data. Using Entity framework to map all the entities, I have used the built in scaffolding to create all the required entities. I have modified the logic for the backend and also the front end to meet the requirements of the client. The client requires a way to manage all the bookings for meeting rooms.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}
+  
